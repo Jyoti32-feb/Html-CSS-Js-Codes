@@ -1,0 +1,35 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(179, 108, 108);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+.card{
+    background-color: whitesmoke;
+
+    padding: 20px;
+
+    width: 300px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 10px gray;
+}
+
+img{
+    width: 150px;
+    border-radius: 50%;
+}
+
+button{
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: rgb(225, 214, 214);
+}
