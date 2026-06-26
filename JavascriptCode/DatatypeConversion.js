@@ -77,3 +77,20 @@ let val=0;
 let valasBoolean=Boolean(val);
 console.log("val as Boolean:", valasBoolean);//false
 console.log("Type of val as Boolean:", typeof valasBoolean);
+
+console.log("1" + 1); //11
+console.log("1" - 1); //0
+console.log("1" * 1+3); //4
+console.log("1" / 1 +"3"); //13
+console.log("12"/2,"3");//6 3
+
+console.log("1"+2+3); //123
+console.log(1+2+"3"); //33
+console.log("1"/2+3); //3.5
+
+console.log(+true); //1
+console.log(+false); //0
+console.log(+null); //0
+console.log(+undefined); //NaN
+
+console.log(+""); //0
