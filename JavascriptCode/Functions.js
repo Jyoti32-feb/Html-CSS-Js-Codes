@@ -98,3 +98,11 @@ console.log(cal1.name);//print  the function name
 const anyobject=cal1();
 anyobject.mess();
 console.log(anyobject.name);
+
+const chaiaurcode=function(){
+    console.log(`welcome to our website `);
+}();
+
+((name)=>{
+    console.log(`chatting with ai...${name}`);
+})("chatgpt");
