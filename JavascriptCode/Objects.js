@@ -79,10 +79,22 @@ const obj={
         pass :12123132
     }
 };
-console.log(obj);
+// console.log(obj);
 
-console.log(Object.keys(myobj));
-console.log(Object.values(myobj));
-console.log(Object.entries(myobj));
+// console.log(Object.keys(myobj));
+// console.log(Object.values(myobj));
+// console.log(Object.entries(myobj));
 
-console.log(Object.hasOwnProperty(myobj.email))
+// console.log(myobj.hasOwnProperty("email"))
+
+const course={
+    coursename : "dsa",
+    price : 12222,
+    courseInstructor : "jyoti pathade"
+};
+
+console.log(course);
+
+const {courseInstructor :instructor}=course
+console.log(instructor);
+console.log(course);
