@@ -46,7 +46,7 @@ function one(){
         console.log(username + website);
 
     }
-    console.log(website);//scoping problem 
+    //console.log(website);//scoping problem 
     two();
 }
 one();
@@ -63,3 +63,38 @@ const greettwo=function(){
 greettwo()
 
 
+const calci=function(username){
+    //console.log(`hey ${this.username}`);// this can not used inside the function
+};
+calci("jyoti");
+
+const user={
+    name :"jyoti",
+    email :"abc@gmail.com",
+    welcomemess:function(){
+        console.log(`hey ${this.name}, how are you `);// used for current object reference
+    }
+}
+user.welcomemess();
+
+const chai=(num1, num2)=>(num1+num2);
+
+console.log(chai(5,7));
+
+
+const cal1 = () => ({
+    name: "jyoti",
+
+    mess: function () {
+        console.log(`Hey new user entered ${this.name}`);
+    }
+});
+
+
+
+
+console.log(cal1.name);//print  the function name
+
+const anyobject=cal1();
+anyobject.mess();
+console.log(anyobject.name);
